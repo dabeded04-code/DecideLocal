@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DecideLocal — Local AI Decision Organizer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="container">
+
+    <header class="hero">
+      <div class="logo">D</div>
+      <p class="eyebrow">POWERED BY QVAC</p>
+      <h1>Decide<span>Local</span></h1>
+      <p class="tagline">
+        Turn a messy situation into a clear decision list.
+      </p>
+      <p class="privacy">
+        Your situation is processed locally on your device.
+      </p>
+    </header>
+
+    <section class="card">
+      <label for="situation">What's on your mind?</label>
+
+      <textarea
+        id="situation"
+        placeholder="Example: I'm thinking of buying a ₱30,000 phone, but I also need money for school. My current phone still works."
+      ></textarea>
+
+      <div class="actions">
+        <button id="organizeBtn">
+          <span id="buttonText">Organize My Decision</span>
+        </button>
+
+        <button id="clearBtn" class="secondary">
+          Clear
+        </button>
+      </div>
+    </section>
+
+    <section id="loading" class="card loading hidden">
+      <div class="spinner"></div>
+      <p>QVAC is organizing your situation locally...</p>
+    </section>
+
+    <section id="resultCard" class="card result hidden">
+      <div class="result-header">
+        <div>
+          <p class="eyebrow">LOCAL AI RESULT</p>
+          <h2>Your Decision List</h2>
+        </div>
+        <span class="local-badge">● LOCAL</span>
+      </div>
+
+      <div id="result"></div>
+    </section>
+
+    <footer>
+      <p>DecideLocal · Local AI powered by Tether QVAC</p>
+      <p>No API key · No cloud AI · Your input stays on your device</p>
+    </footer>
+
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
