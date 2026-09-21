@@ -1,95 +1,43 @@
-DecideLocal
+# 🧠 DecideLocal
 
-Turn a messy situation into a clear decision list.
+### Local AI Decision Organizer
 
-🔗 Links
-GitHub Repository: https://github.com/dabeded04-code/DecideLocal
-Local App: http://localhost:3000
-About
+> Turn a messy situation into a clear decision list.
 
-DecideLocal is a local AI web app that helps users organize a messy situation before making a decision.
+DecideLocal is a lightweight web application powered by **Tether QVAC** that helps users organize situations before making a decision.
 
-Instead of making the decision for the user, DecideLocal uses Tether QVAC to organize their thoughts into clear sections.
+Instead of deciding for the user, the application uses local AI to organize the situation into useful factors, questions, and a possible next step.
 
-✨ Features
-Local AI inference
-No external AI API key
-No cloud AI service
-Simple web interface
-Structured decision organization
-Responsive design
-Clear/reset functionality
-🤖 Powered by Tether QVAC
+The AI inference runs locally through the **QVAC SDK**.
 
-DecideLocal uses the Tether QVAC JavaScript/TypeScript SDK v0.19.1.
+---
 
-The application uses:
+## 🔗 Project Links
 
-loadModel() to load the local AI model
-completion() to generate the structured response
-🛠️ Tech Stack
-Node.js
-Express
-Tether QVAC SDK 0.19.1
-HTML
-CSS
-JavaScript
-📋 Requirements
-Node.js 22.17.0 or newer
-npm 10.9.0 or newer
-🚀 Installation
-git clone https://github.com/dabeded04-code/DecideLocal.git
-cd DecideLocal
-npm install
-▶️ Run the App
-npm start
+| Resource | Link |
+|---|---|
+| 📦 GitHub Repository | https://github.com/dabeded04-code/DecideLocal |
+| 🌐 App | http://localhost:3000 |
 
-Then open:
+---
 
-http://localhost:3000
+## ✨ Features
 
-The first startup may download the QVAC local AI model.
+- 🧠 **Local AI Inference** — Uses a QVAC local AI model to process the user's situation.
+- 📋 **Decision Organization** — Breaks a messy situation into clear sections.
+- ❓ **Helpful Questions** — Generates questions for the user to consider.
+- ➡️ **Possible Next Step** — Provides a practical next step without making the decision.
+- 🔒 **Privacy-Focused** — No external AI API key is required.
+- ⚡ **Simple Interface** — Enter a situation and receive an organized response.
+- 📱 **Responsive Design** — Works across desktop and smaller screens.
 
-💡 How It Works
-The user describes a situation.
-DecideLocal sends it to the locally loaded QVAC model.
-QVAC generates a structured response.
-The result appears in the browser.
-The user makes their own decision using the organized information.
-🔐 Privacy
+---
 
-DecideLocal is designed around local AI processing.
+## 🤖 QVAC Integration
 
-The application does not require an external AI API key.
+DecideLocal demonstrates how **Tether QVAC** can be integrated into a practical local AI application.
 
-User input is processed by the QVAC model running locally on the user's device.
+### QVAC SDK
 
-📁 Project Structure
-DecideLocal/
-├── public/
-│   ├── index.html
-│   ├── style.css
-│   └── app.js
-├── server.js
-├── package.json
-├── package-lock.json
-├── README.md
-├── LICENSE
-└── .gitignore
-📸 Demo
-
-Open the app at:
-
-http://localhost:3000
-
-Enter a situation and click Organize My Decision to see the local QVAC AI result.
-
-📜 License
-
-This project is licensed under the MIT License.
-
-👤 Author
-
-dabeded04-code
-
-GitHub: https://github.com/dabeded04-code
+```text
+@qvac/sdk 0.19.1
